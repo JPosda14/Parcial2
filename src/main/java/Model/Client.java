@@ -1,18 +1,22 @@
 package Model;
 
-public class Client {
-    private String id;
-    private String name;
+public class Client { private String name;
+    private String code;
     private String phoneNumber;
     private String email;
-    private String direction;
+    private int age;
 
-    public String getId() {
-        return id;
+    public int getAge() {
+        return age;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Client(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {
@@ -21,6 +25,14 @@ public class Client {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getPhoneNumber() {
@@ -37,21 +49,5 @@ public class Client {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getDirection() {
-        return direction;
-    }
-
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
-
-    public Client(String id, String name, String phoneNumber, String email, String direction) {
-        this.id = id;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.direction = direction;
     }
 }

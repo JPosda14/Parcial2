@@ -1,12 +1,17 @@
 package Model;
 
-public class Drugstore {
-    private final ClientService clientService;
+//import Service.impl.ClientServiceImpl;
+import Application.SearchObject;
+import Application.ShowMaquinatorList;
+
+
+public class Laboratory {
+//    private final ClientServiceImpl clientService;
     private final SearchObject searchObject;
     private final ShowMaquinatorList showMaquinatorList;
 
     public Laboratory() {
-        clientService = new ClientServiceImpl();
+//        clientService = new ClientServiceImpl();
         searchObject=new SearchObject();
         showMaquinatorList=new ShowMaquinatorList();
     }
@@ -19,6 +24,7 @@ public class Drugstore {
         return showMaquinatorList;
     }
 
-    public ClientServiceImpl getClientService() {
-        return clientService;
+//    public ClientServiceImpl getClientService() {
+//        return clientService;
+//    }
 }

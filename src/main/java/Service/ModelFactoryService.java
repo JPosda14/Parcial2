@@ -1,5 +1,6 @@
 package Service;
 
-public interface ClientService {
+public interface ModelFactoryService {
     void saveClient(String name,int age);
+
 }

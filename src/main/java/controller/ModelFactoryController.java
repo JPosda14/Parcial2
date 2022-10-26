@@ -1,6 +1,9 @@
 package controller;
 
-public class ModelFactoryController implements ModelFactoryService {
+import Model.Laboratory;
+import Service.ModelfactoryService;
+
+public class ModelFactoryController implements ModelfactoryService {
     Laboratory laboratorio;
     //------------------------------ Singleton ------------------------------------------------
 // Clase estatica oculta. Tan solo se instanciara el singleton una vez
@@ -18,5 +21,5 @@ public class ModelFactoryController implements ModelFactoryService {
 
 
     @Override
-    public void saveClient(String name, int age) {
-        laboratorio.getClientService().saveClient(name,age);
+    public void saveClient(String name, int age) {laboratorio.getClientService().saveClient(name,age);}
+}
